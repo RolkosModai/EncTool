@@ -13,7 +13,7 @@ logo="""\a\a\33[32m
 \33[0;1m           Protect your code and copyright by encrypting
                them using this encrypter script
 \33[34m________________________________________________________________________
- \33[31;1m          Author : Alienkrishn | GitHub : Anon4You \33[36;1m
+ \33[31;1m          Author : Rolka | GitHub : RolkosModai \33[36;1m
 
 1- Encrypt Bash
 2- Decrypt Bash
@@ -26,7 +26,7 @@ logo="""\a\a\33[32m
 about="""\33[32;1m
 coded by Bishal Singh
 
-Github.com/Anon4You
+Github.com/RolkosModai
 
 This script is written in python, you can use
 this script to encrypt/decrypt your bash scripts
@@ -34,9 +34,9 @@ and you can also encrypt python code in marshal
 just type enctool to run this script
 
 follow developer»»————>
-Instagram : Alienkrishn
-Youtube   : Alienkrishn
-Telegram  : Alienkrishn
+Instagram : Rolka
+Youtube   : Rolka
+Telegram  : Rolka
 \33[0m"""
 print(logo)
 
@@ -53,7 +53,7 @@ def encbash():
     out_file=input('Output Filename: ')
     with open(".temp","r") as temp_f, open(out_file,'w') as out_f:
         encdata=temp_f.read()
-        out_f.write("# Eencrypted by EncTool\n#By Alienkrishn\n\n"+encdata)
+        out_f.write("# Eencrypted by EncTool\n#By Rolka\n\n"+encdata)
     os.remove(".temp")
     print("succesfuly encrypted "+in_file+" and saved as "+out_file)
 
@@ -75,7 +75,7 @@ def decbash():
     os.remove(".temp1")
     with open(".temp2",'r') as temp_f2, open(out_file,'w') as out_f:
         filedata = temp_f2.read()
-        out_f.write("# Decrypted by EncTool\n#By Alienkrishn\n\n"+filedata)
+        out_f.write("# Decrypted by EncTool\n#By Rolka\n\n"+filedata)
     os.remove(".temp2")
     print("succesfuly decrypted "+in_file+" and saved as "+out_file)
 
@@ -99,7 +99,7 @@ def encpy():
             print("File allready Encrypted")
     fileout = open(As + '_en.py', 'w')
     fileout.write('#Encrypted by EncTool\n')
-    fileout.write('#Alienkrishn\n')
+    fileout.write('#Rolka\n')
     fileout.write('import marshal\n')
     fileout.write('exec(marshal.loads(' + repr(data) + '))')
     fileout.close()
